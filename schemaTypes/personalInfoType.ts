@@ -18,6 +18,12 @@ export const personalInfoType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'selfTitle',
+      title: 'Self title',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'bio',
       title: 'Bio',
       type: 'text',
